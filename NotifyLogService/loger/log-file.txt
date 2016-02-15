@@ -1,0 +1,14 @@
+
+----------------------header--------------------------
+2016-02-03 15:39:01,395 [1021] DEBUG loggor [(null)]  - SendSimpleMessageTo ds:ds
+2016-02-03 15:39:19,059 [1021] DEBUG loggor [(null)]  - BroadCast:ds
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2016-02-04 11:30:17,192 [945] DEBUG loggor [(null)]  - BroadCast:dfdfs
+2016-02-04 11:30:38,863 [945] DEBUG loggor [(null)]  - SendSimpleMessageTo zhangweixing:dfdfs
+2016-02-04 11:30:46,565 [945] DEBUG loggor [(null)]  - SendSimpleMessageTo -1:dfdfs
+2016-02-04 11:30:50,871 [945] DEBUG loggor [(null)]  - SendSimpleMessageTo -1:dfdffsdfsfsf
+2016-02-04 11:30:55,960 [945] DEBUG loggor [(null)]  - BroadCast:dfdffsdfsfsf
+2016-02-04 11:31:04,655 [945] DEBUG loggor [(null)]  - SendSimpleMessageTo zhangweixing:mmmmm
