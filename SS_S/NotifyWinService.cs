@@ -44,7 +44,7 @@ namespace SS_S
         }
         public NotifyWinService()
         {
-            File.AppendAllText(@"D:\345.txt", "aa");
+            //File.AppendAllText(@"D:\345.txt", "aa");
             InitializeComponent();
             InitConfig();
             logger.Debug("OO");

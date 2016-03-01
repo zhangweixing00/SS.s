@@ -7,6 +7,7 @@ using ECommon.IoC;
 using ECommon.Scheduling;
 using EQueue.Clients.Consumers;
 using EQueue.Protocols;
+using EQueueClient.AgentService;
 
 namespace EQueueClient
 {
@@ -15,7 +16,21 @@ namespace EQueueClient
         static void Main(string[] args)
         {
 
+            //var service = new ContractServiceLib.Common.WebServiceHelper("http://172.25.20.43:3553/Service.asmx");
+            // service.Notify("zhangweixing", "hello" );
+            // service.Notify1("zhangweixing","hello" );
+            //TestNotifyService();
+            //AgentService.AgentServiceSoapClient c = new AgentService.AgentServiceSoapClient();
+            //c.Invoke("http://172.25.20.43:3553/Service.asmx", "Notify", "Service", new ArrayOfAnyType() {"zhangweixing","hello" });
+            new Service().Invoke("http://172.25.20.43:3553/Service.asmx", "Notify", "Service", new string[] { "zhangweixing", "star" });
+            //var messageHandler = new MessageHandler();
+            //var consumer1 = new Consumer("Consumer1", "group1").Subscribe("SampleTopic").Start(messageHandler);
 
+            //var scheduleService = ObjectContainer.Resolve<IScheduleService>();
+        }
+
+        private static void TestNotifyService()
+        {
             NotifyService.NotifyServiceClient client = new NotifyService.NotifyServiceClient();
 
             while (true)
@@ -27,13 +42,7 @@ namespace EQueueClient
                     client.SendSimpleMessage("zhangweixing", txt);
                 }
             }
-            //var messageHandler = new MessageHandler();
-            //var consumer1 = new Consumer("Consumer1", "group1").Subscribe("SampleTopic").Start(messageHandler);
-
-            //var scheduleService = ObjectContainer.Resolve<IScheduleService>();
         }
-
-
 
         class MessageHandler : IMessageHandler
         {

@@ -13,7 +13,10 @@ namespace NotifyLib
         {
             return DeserializeObject(recData) as MessageInfo;
         }
-
+       public static byte[] ToBytes<T>(this T info)
+        {
+            return SerializeObject(info);
+        }
         public static byte[] ToBytes(this MessageInfo info)
         {
             return SerializeObject(info);

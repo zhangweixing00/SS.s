@@ -144,11 +144,5 @@ namespace ContractServiceLib.Common
                 }
             }
         }
-
-        public static object[] ExecuteMethodDirectly(string pUrl, string pMethodName, params object[] pParams)
-        {
-            return new WebServiceHelper(pUrl).ExecuteMethodDirectly(pMethodName, pParams);
-        }
-
     }
 }

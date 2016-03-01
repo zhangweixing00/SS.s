@@ -33,6 +33,10 @@ namespace NotifyWebService
         [WebMethod]
         public void Notify(string user, string msg)
         {
+            if (!string.IsNullOrEmpty(user))
+            {
+
+            }
             channel.NotifyMessage(user, msg);
         }
     }

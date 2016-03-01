@@ -60,9 +60,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InvokeAgentService.cs" />
     <Compile Include="InvokeContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AgentService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\NotifyService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -75,6 +81,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Service References\AgentService\AgentService.wsdl" />
     <None Include="Service References\NotifyService\item.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -87,6 +94,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AgentService\" />
     <WCFMetadataStorage Include="Service References\NotifyService\" />
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +114,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\Services.xml" />
+    <None Include="Service References\AgentService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AgentService\configuration.svcinfo" />
+    <None Include="Service References\AgentService\configuration91.svcinfo" />
+    <None Include="Service References\AgentService\AgentService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContractServiceLib.Common\ContractServiceLib.Common.csproj">
+      <Project>{deb1731b-9e57-4dd3-8bff-a2113a15c083}</Project>
+      <Name>ContractServiceLib.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

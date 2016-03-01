@@ -24,6 +24,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyServer", "NotifyServer\NotifyServer.csproj", "{78BDABE9-78B2-4C40-AF97-59BD93E2497D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EQueueClient", "EQueueClient\EQueueClient.csproj", "{CBA37AA4-A169-4EDB-8528-F3AA465BD6EC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B31E203A-0139-4342-BF28-D3B54A400986} = {B31E203A-0139-4342-BF28-D3B54A400986}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSMC", "NSMC\NSMC.csproj", "{36E1943F-A740-4E00-BC1B-05B5F88196F8}"
 EndProject
@@ -44,6 +47,30 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyWebService", "NotifyWebService\NotifyWebService.csproj", "{E17B9908-3624-4CBD-948A-B3F741AA82AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractServiceLib.Common", "ContractServiceLib.Common\ContractServiceLib.Common.csproj", "{DEB1731B-9E57-4DD3-8BFF-A2113A15C083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceAgent", "WebServiceAgent\WebServiceAgent.csproj", "{B31E203A-0139-4342-BF28-D3B54A400986}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TestService", "F:\WebSites\TestService\", "{E8C8B689-7716-47AC-98BA-151B6762CCCF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52020"
+		Debug.AspNetCompiler.PhysicalPath = "F:\WebSites\TestService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52020\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52020"
+		Release.AspNetCompiler.PhysicalPath = "F:\WebSites\TestService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52020\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52020"
+		SlnRelativePath = "F:\WebSites\TestService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +150,14 @@ Global
 		{DEB1731B-9E57-4DD3-8BFF-A2113A15C083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEB1731B-9E57-4DD3-8BFF-A2113A15C083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEB1731B-9E57-4DD3-8BFF-A2113A15C083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31E203A-0139-4342-BF28-D3B54A400986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31E203A-0139-4342-BF28-D3B54A400986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31E203A-0139-4342-BF28-D3B54A400986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31E203A-0139-4342-BF28-D3B54A400986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8C8B689-7716-47AC-98BA-151B6762CCCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C8B689-7716-47AC-98BA-151B6762CCCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C8B689-7716-47AC-98BA-151B6762CCCF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C8B689-7716-47AC-98BA-151B6762CCCF}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,5 +169,6 @@ Global
 		{EF2F67E6-3B37-47F1-9F28-7C4C332DD20A} = {DFCF02BA-FC56-4402-BBEC-08E6225FDC96}
 		{E17B9908-3624-4CBD-948A-B3F741AA82AF} = {7991B8C2-B067-4012-A9D6-2E7D6BAD32F6}
 		{DEB1731B-9E57-4DD3-8BFF-A2113A15C083} = {D6D9A305-DA7E-4282-8843-F38EFB2D74D6}
+		{B31E203A-0139-4342-BF28-D3B54A400986} = {7991B8C2-B067-4012-A9D6-2E7D6BAD32F6}
 	EndGlobalSection
 EndGlobal
